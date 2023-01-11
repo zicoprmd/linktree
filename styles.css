@@ -1,0 +1,185 @@
+body {
+  font-family: system-ui, sans-serif;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+#flex_container {
+  height: 100vh;
+  width: 350px;
+}
+
+#flex_container,
+#links_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#links_container {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2em;
+  margin-left: 25px;
+}
+
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1,
+h3 {
+  text-align: right;
+}
+
+.gudea {
+  font-family: 'Gudea', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+  background-image: linear-gradient(135deg, white, lightgreen, darkblue);
+  color: #fefdf8;
+}
+
+#profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+#face-name-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+#switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fefdf8;
+  -webkit-transition: 0s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-image: linear-gradient(135deg, white, #90ee90, darkblue);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round.slider-mode-light:before {
+  border-radius: 50%;
+  background-image: linear-gradient(135deg, white, #90ee90, darkblue);
+}
+
+.slider.round.slider-mode-dark:before {
+  border-radius: 50%;
+  background-color: #fefdf8;
+}
+
+#mode-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  justify-content: flex-end;
+  border: solid 1px;
+}
+
+/* Dark Mode */
+.dark-mode-body {
+  background-image: linear-gradient(135deg, white, lightblue, darkblue);
+  /* background-color: #a2690c; */
+  color: #fefdf8;
+}
+
+.dark-mode-a {
+  color: #fefdf8;
+  border: 2px solid #fefdf8;
+}
+
+/* light mode */
+.light-mode-body {
+  background-color: #fefdf8;
+  color: #000000;
+}
+
+.light-mode-a {
+  color: #0c6da2;
+  border: 2px solid #0c6da2;
+}
+
+/* BELUM KEPAKE */
+/* #slider-mode-light {
+  background-color: #0c6da2;
+}
+
+#slider-mode-dark {
+  background-color: #0c6da2;
+} */
+
+#footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 40px;
+}
