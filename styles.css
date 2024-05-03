@@ -57,10 +57,21 @@ a {
   font-weight: bold;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: none;
   background-image: linear-gradient(135deg, white, lightgreen, darkblue);
   color: #2c2c2c;
+}
+ */
+
+/* hover sesuai mode */
+.light-mode-a:hover {
+  background-image: linear-gradient(135deg, #0f0f33, #6f97ac);
+  color: #ffffff;
+}
+.dark-mode-a:hover {
+  background-color: antiquewhite;
+  color: #000000;
 }
 
 #profile-pic {
@@ -129,7 +140,7 @@ input:checked + .slider:before {
 
 .slider.round.slider-mode-light:before {
   border-radius: 50%;
-  background-image: linear-gradient(135deg, white, #90ee90, darkblue);
+  background-image: linear-gradient(135deg, white, #64af64, darkblue);
 }
 
 .slider.round.slider-mode-dark:before {
